@@ -365,7 +365,7 @@ return (
 
             {/* Community Partners */}
             <div className="relative mt-8">
-                <SectionDivider title="Community Sponsors" />
+                <SectionDivider title="Community Partners" />
                 <div className="grid grid-cols-2 gap-4 py-8">
                     {/* Community Partner 1 */}
                     <div className="h-32 flex items-center justify-center p-4">
