@@ -3,12 +3,13 @@ import React from "react";
 import { LampContainer } from "../ui/lamp";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import { speakers } from "@/data/index";
+import Heading from "./Heading";
 
 const Speakers = () => {
 	return (
 		<section id="speakers" className="relative container">
 			<LampContainer>
-				<h2>Featured Speakers</h2>
+				<Heading text="Featured Speakers" />
 			</LampContainer>
 			<InfiniteMovingCards
 				items={speakers}

@@ -87,6 +87,28 @@
 	}
 }
 
+@layer components {
+	.glow-text {
+	  color: white;
+	  text-shadow: 0 0 0px white;
+	  animation: glow .5s ease-in-out;
+	}
+  
+	@keyframes glow {
+	0% {
+		text-shadow: 0 0 8px white;
+	  }
+
+	80% {
+		text-shadow: 0 0 6px white;
+	}
+
+	100% {
+		text-shadow: 0 0 0px white;
+	}
+  }
+}
+
 .blue-blur {
 	position: absolute;
 	transform: rotate(41.861deg);
