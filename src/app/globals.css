@@ -138,3 +138,31 @@
 	filter: blur(27.409912109375px);
 	z-index: 0;
 }
+
+.glow-text-orange {
+	/* Base text color (Tailwind’s orange-500) */
+	color: #f97316;
+	
+	/*
+	  Use multiple text-shadow layers with smaller blur radii
+	  and slight transparency to tone down the glow.
+	*/
+
+
+	animation: glow-orange 0.8s infinite alternate;
+  }
+
+  @keyframes glow-orange {
+	from {
+	  text-shadow:
+		0 0 2px rgba(249, 115, 22, 0.2),
+		0 0 4px rgba(249, 115, 22, 0.1);
+	}
+	to {
+	  text-shadow:
+		0 0 3px rgba(249, 115, 22, 0.8),
+		0 0 5px rgba(249, 115, 22, 0.6),
+		0 0 7px rgba(249, 115, 22, 0.4);
+	}
+  }
+  

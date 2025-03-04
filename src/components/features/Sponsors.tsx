@@ -2,6 +2,7 @@
 // Sponsors.tsx
 import React, {useState} from 'react';
 import { sponsors } from "@/data/index";
+import GlowingTextOrange from '../ui/glowing-text-orange';
 
 // types.ts
 interface Sponsor {
@@ -43,17 +44,43 @@ const SectionDivider: React.FC<SectionDividerProps> = ({ title }) => {
 };
 
 // Reusable sponsor logo component
-const SponsorLogo: React.FC<{ sponsor: Sponsor; className?: string }> = ({ sponsor, className }) => {
-  return (
-    <div className={`flex items-center justify-center hover:border-2 rounded-3xl border-primary ${className}`}>
-      <img
-        src={sponsor.logo}
-        alt={sponsor.name}
-        className="max-w-full max-h-full object-contain"
-      />
-    </div>
-  );
-};
+const SponsorLogo: React.FC<{ sponsor: Sponsor; className?: string }> = ({
+    sponsor,
+    className,
+  }) => {
+    return (
+      <div
+        // Outer container handles scaling on hover + "group" so children can react
+        className={`
+          group relative inline-flex items-center justify-center
+          overflow-hidden
+          transition-transform duration-300
+          hover:scale-105
+          ${className ?? ''}
+        `}
+      >
+        <div
+          className="
+            absolute inset-0 rounded-2xl
+            bg-gradient-to-b from-green-300 to-orange-500
+            p-[2px]
+            opacity-0 group-hover:opacity-100
+            transition-opacity duration-300
+            pointer-events-none
+          "
+        >
+          <div className="w-full h-full bg-[#0f0f0f] rounded-2xl" />
+        </div>
+  
+        {/* Actual content on top */}
+        <img
+          src={sponsor.logo}
+          alt={sponsor.name}
+          className="relative z-10 max-w-full max-h-full object-contain"
+        />
+      </div>
+    );
+  };
 
 // Reusable tier component that adapts to different layouts
 const SponsorTier: React.FC<SponsorTierProps> = ({ title, sponsors, layout }) => {
@@ -308,14 +335,20 @@ const Sponsors: React.FC = () => {
         {/* Desktop Header */}
         <div className="justify-center items-center mb-11 lg:flex sm:flex hidden">
           <h2 className='text-center'>
-            Special Thanks To Our <span className="text-orange-500">Sponsors And Partners</span>
+            Special Thanks To Our{' '}   
+            <GlowingTextOrange className="font-bold">
+                Sponsors And Partners
+            </GlowingTextOrange>
           </h2>
         </div>
         
         {/* Mobile Header */}
         <div className="flex justify-center items-center mb-6 sm:hidden">
           <h2 className="text-[31px] text-center">
-            Special Thanks To Our <span className="text-orange-500">Sponsors And Partners</span>
+          Special Thanks To Our{' '}   
+            <GlowingTextOrange className="font-bold">
+                Sponsors And Partners
+            </GlowingTextOrange>
           </h2>
         </div>
 
