@@ -1,22 +1,22 @@
 {
-    "platinum": [
-      { "name": "iACADEMY", "logo": "/svgs/iacademy.svg" },
-      { "name": "Packetworx", "logo": "/svgs/packetworx.svg" },
-      { "name": "Superteam PHL", "logo": "/svgs/superteam.svg" },
-      { "name": "Solana", "logo": "/svgs/solana.svg" },
-      { "name": "The Block", "logo": "/svgs/block.svg" }
-    ],
-    "gold": [
-      { "name": "PLDT Innolab", "logo": "/svgs/pldt.svg" },
-      { "name": "Anonimouse IT Solutions", "logo": "/svgs/anonimouse.svg" },
-      { "name": "Alert", "logo": "/svgs/alert.svg" },
-      { "name": "DICT Region IVA", "logo": "/svgs/dict.svg" },
-      { "name": "Electrogics", "logo": "/svgs/electrogics.svg" },
-      { "name": "Appkademiya", "logo": "/svgs/appkademiya-1.svg" }
-    ],
-    "silver": [],
-    "community": [
-      { "name": "Community 1", "logo": "/svgs/community1.svg" },
-      { "name": "Other Parners", "logo": "/svgs/community2.svg" }
-    ]
-  }
+  "platinum": [
+    { "name": "iACADEMY", "logo": "/svgs/iacademy.svg" },
+    { "name": "Packetworx", "logo": "/svgs/packetworx.svg" },
+    { "name": "Superteam PHL", "logo": "/svgs/superteam.svg" },
+    { "name": "Solana", "logo": "/svgs/solana.svg" },
+    { "name": "The Block", "logo": "/svgs/block.svg" }
+  ],
+  "gold": [
+    { "name": "PLDT Innolab", "logo": "/svgs/pldt.svg" },
+    { "name": "Anonimouse IT Solutions", "logo": "/svgs/anonimouse.svg" },
+    { "name": "Alert", "logo": "/svgs/alert.svg" },
+    { "name": "DICT Region IVA", "logo": "/svgs/dict.svg" },
+    { "name": "Electrogics", "logo": "/svgs/electrogics.svg" },
+    { "name": "Appkademiya", "logo": "/svgs/appkademiya-1.svg" }
+  ],
+  "silver": [],
+  "community": [
+    { "name": "Community 1", "logo": "/svgs/community1.svg" },
+    { "name": "Other Partners", "logo": "/svgs/community2.svg" }
+  ]
+}

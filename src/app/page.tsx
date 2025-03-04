@@ -8,6 +8,7 @@ import Speakers from "@/components/features/Speakers";
 import Merch from "@/components/features/Merch";
 import { Hero } from "@/components/features/Hero";
 import AboutUs from "@/components/features/AboutUs";
+import Sponsors from "@/components/features/Sponsors";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Speakers />
       <FAQs />
       <Agenda />
+	  <Sponsors />
       <Merch />
       <CtaBanner />
       <Footer />
